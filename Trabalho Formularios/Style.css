@@ -1,0 +1,308 @@
+#cabeçalho {
+
+  background-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  border: solid;
+  padding: 0px;
+  margin-block-end: 1cm;
+}
+
+#principal {
+  background-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  border: 2px;
+  padding: 4px;
+  margin: 25px;
+  border: solid;
+  border-width: 0.1mm;
+
+}
+
+.campo {
+  text-align: center;
+
+}
+
+#data {
+  margin-right: 90px;
+  margin-top: 10px;
+}
+
+#nome {
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+#email {
+
+  margin-right: -50px;
+  margin-top: 10px;
+}
+
+#login {
+  margin-right: -60px;
+  margin-top: 10px;
+
+}
+
+#senha {
+
+  margin-right: -58px;
+  margin-top: 10px;
+
+}
+
+#estado {
+
+  margin-right: -35px;
+  margin-top: 10px;
+
+}
+
+.radio {
+
+  text-align: left;
+}
+
+.botao {
+
+  align-content: center;
+
+
+
+}
+
+#botao_1 {
+  display: inline-block;
+  color: black;
+  font-size: 30px;
+  border: 1px solid black;
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+
+  border-bottom-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  padding-bottom: 5px;
+  margin-left: 50px;
+
+
+
+}
+
+#botao_2 {
+  float: right;
+  display: inline-block;
+  color: black;
+  font-size: 30px;
+  border: 1px solid black;
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+
+  border-bottom-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-right: 50px;
+
+
+}
+
+#botao_1:hover {
+  color: white;
+  background-color: black;
+
+}
+
+#botao_2:hover {
+  color: white;
+  background-color: black;
+
+}
+
+/* ---------------------------------Formulario_02------------------------------------------------ */
+
+
+#principal_2 {
+
+  display: inline-block;
+  background-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  width: 40%;
+  color: black;
+  /* border: 2px;
+        padding:4px;
+        margin: 25px; */
+  border: solid;
+  border-width: 0.1mm;
+  margin-left: 10px;
+}
+
+#principal_3 {
+  float: right;
+  background-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  /* border: 2px;
+        padding:4px;
+        margin: 25px;
+        border: solid;
+        border-width: 0.1mm;  */
+  width: 600px;
+  height: 267px;
+  margin-right: 10px;
+
+}
+
+.campoCadastro {
+  text-align: right;
+}
+
+#codCliente {
+  margin-right: 40px;
+
+}
+
+#valCompra {
+  margin-right: 40px;
+
+}
+
+.radioEquip {
+  text-align: left;
+  font-size: 20px;
+}
+
+.botaoCadastro {
+  margin: 10px;
+
+  color: black;
+  font-size: 40px;
+  width: 20%;
+  text-align: center;
+
+
+  border-bottom-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+
+}
+
+.campoAlteracao {
+
+  text-align: right;
+
+}
+
+#codClientePesquisa {
+  margin-right: 40px;
+
+}
+
+#RetValCompra {
+  margin-right: 40px;
+
+}
+
+.botaoAlteracao {
+
+  margin-top: 147px;
+
+  color: black;
+  font-size: 40px;
+  width: 20%;
+  text-align: center;
+
+
+  border-bottom-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+}
+
+/* ---------------------------------Formulario_03--------------------------------------------- */
+
+
+.campoArtigo {
+  text-align: right;
+}
+
+#titulo {
+  margin-right: 500px;
+
+}
+
+#dataPublicacao {
+  margin-right: 528px;
+
+}
+
+#palavraChave {
+  margin-right: 510px;
+  block-size: 100px;
+
+
+}
+
+.botaoAnexo {
+  text-align: center;
+
+}
+
+#botaoA {
+  color: black;
+  font-size: 20px;
+  width: 20%;
+  text-align: center;
+
+
+  border-bottom-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  border: solid black 0.1px;
+  background-color: white;
+}
+
+.botaoEnviar {
+
+  display: block;
+  box-align: center;
+  color: black;
+  font-size: 40px;
+  width: 25%;
+  text-align: center;
+  margin-left: 467px;
+
+
+
+  border-bottom-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}

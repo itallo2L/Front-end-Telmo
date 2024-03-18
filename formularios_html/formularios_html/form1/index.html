@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="Description" content="Formulário simples para coleta de informações pessoais"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+      <title>Formulários - coleta informações pessoais</title>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col">
+               <header class="header shadow-md p-3 mb-5 rounded">
+                  <h3>Formulários - coleta informações pessoais</h3>
+               </header>
+            </div>
+         </div>
+         <div class="row mt-3">
+            <div class="col-2"></div>
+            <div class="col-8 form shadow-md p-3 mb-5 rounded border">
+               <h4 class="mb-4">Informações pessoais</h4>
+               <form class="needs-validation" novalidate>
+                  <div>
+                     <div class="form-group row my-2">
+                        <label for="nome" class="col-sm-3 col-form-label label">Nome completo: </label>
+                        <div class="col-9">
+                           <input type="text" maxlength="60" class="form-control" id="nome" placeholder="Digite seu nome">
+                           <div class="valid-feedback">
+                              Tudo certo!
+                           </div>
+                           <div class="invalid-feedback">
+                              Por favor, digite seu nome completo.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row my-2">
+                        <label for="email" class="col-sm-3 col-form-label label">E-mail: </label>
+                        <div class="col-sm-9">
+                           <input type="email" maxlength="60" class="form-control" id="email" placeholder="Digite seu e-mail">
+                           <div class="valid-feedback">
+                              Tudo certo!
+                           </div>
+                           <div class="invalid-feedback">
+                              Por favor, digite um email válido.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row my-2">
+                        <label for="nascimento" class="col-sm-3 col-form-label label">Data de nascimento</label>
+                        <div class="col-sm-9">
+                           <input type="date" class="form-control w-50" id="nascimento" placeholder="Digite sua data de nascimento">
+                        </div>
+                     </div>
+                     <div class="form-group row my-2">
+                        <label for="login" class="col-sm-3 col-form-label label">Login: </label>
+                        <div class="col-sm-9">
+                           <input type="text" class="form-control w-50" id="login" placeholder="Digite seu login" maxlength="60" minlength="5" required>
+                           <div class="valid-feedback">
+                              Tudo certo!
+                           </div>
+                           <div class="invalid-feedback">
+                              Por favor, digite um login válido.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row my-2">
+                        <label for="senha" class="col-sm-3 col-form-label label">Senha: </label>
+                        <div class="col-sm-9">
+                           <input type="password" class="form-control w-50" id="senha" placeholder="Digite sua senha" maxlength="80" minlength="4" required>
+                           <div class="valid-feedback">
+                              Tudo certo!
+                           </div>
+                           <div class="invalid-feedback">
+                              Por favor, digite uma senha válida.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row my-2">
+                        <label for="estados" class="col-sm-3 col-form-label label">Estado: </label>
+                        <div class="col-sm-9">
+                           <select id="estados" class="form-select w-50" aria-label="Estados">
+                              <option selected>Selecione o estado</option>
+                              <option value="AC">Acre</option>
+                              <option value="AL">Alagoas</option>
+                              <option value="AP">Amapá</option>
+                              <option value="AM">Amazonas</option>
+                              <option value="BA">Bahia</option>
+                              <option value="CE">Ceará</option>
+                              <option value="DF">Distrito Federal</option>
+                              <option value="ES">Espírito Santo</option>
+                              <option value="GO">Goiás</option>
+                              <option value="MA">Maranhão</option>
+                              <option value="MT">Mato Grosso</option>
+                              <option value="MS">Mato Grosso do Sul</option>
+                              <option value="MG">Minas Gerais</option>
+                              <option value="PA">Pará</option>
+                              <option value="PB">Paraíba</option>
+                              <option value="PR">Paraná</option>
+                              <option value="PE">Pernambuco</option>
+                              <option value="PI">Piauí</option>
+                              <option value="RJ">Rio de Janeiro</option>
+                              <option value="RN">Rio Grande do Norte</option>
+                              <option value="RS">Rio Grande do Sul</option>
+                              <option value="RO">Rondônia</option>
+                              <option value="RR">Roraima</option>
+                              <option value="SC">Santa Catarina</option>
+                              <option value="SP">São Paulo</option>
+                              <option value="SE">Sergipe</option>
+                              <option value="TO">Tocantins</option>
+                              <option value="EX">Estrangeiro</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <label class="col-sm-3 col-form-label" for="faixa">
+                     Faixa etária
+                     </label>
+                     <div class="col-sm-9" id="faixa">
+                        <div class="form-check" >
+                           <input class="form-check-input" type="radio" name="faixaEtaria" id="menor18" value="Menor18" checked>
+                           <label class="form-check-label" for="menor18">
+                           Menor ou igual a 18
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="faixaEtaria" id="maior18" value="Maior18">
+                           <label class="form-check-label" for="maior18">
+                           Maior de 18
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-6">
+                        <button type="reset" class="btn btn-secondary mt-3 fr">Limpar formulário</button>
+                     </div>
+                     <div class="col-6">
+                        <button type="submit" class="btn btn-success mt-3">Efetuar cadastro</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="col-2"></div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+      <script src="./script.js"></script>
+   </body>
+</html>

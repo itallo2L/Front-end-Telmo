@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="Description" content="Formulário simples para coleta de informações pessoais"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+      <title>Formulários - coleta informações pessoais</title>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col">
+               <header class="header shadow-md p-3 mb-5 rounded">
+                  <h3>Formulários - publicação de artigos</h3>
+               </header>
+            </div>
+         </div>
+         <div class="row mt-3">
+            <div class="col-2"></div>
+            <div class="col-8 form shadow-md p-3 mb-5 rounded border">
+               <h4 class="mb-4">Artigo</h4>
+               <form class="needs-validation" novalidate>
+                  <div class="form-group row my-2">
+                     <label for="titulo" class="col-sm-3 col-form-label label">Título: </label>
+                     <div class="col-9">
+                        <input type="text" maxlength="60" class="form-control" id="titulo" placeholder="Digite o titulo do artigo" required>
+                        <div class="valid-feedback">
+                           Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                           O título e obrigatório.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group row my-2">
+                     <label for="publicacao" class="col-sm-3 col-form-label label">Data da publicação: </label>
+                     <div class="col-sm-9">
+                        <input type="date" class="form-control" id="publicacao" placeholder="Digite a data" required>
+                        <div class="valid-feedback">
+                           Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                           A publicação e obrigatória.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group row my-2">
+                     <label for="chave" class="col-sm-3 col-form-label label">Palavras-chave do artigo: </label>
+                     <div class="col-sm-9">
+                        <textarea class="form-control w-50" id="chave" rows="3" placeholder="Digite as palavras chave" required></textarea>
+                        <div class="valid-feedback">
+                           Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                           As palavras-chave do artigo são obrigatórias.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group row my-2">
+                     <div class="form-group">
+                        <label class="label" for="enviar">Enviar artigo (formato .pdf, máximo de 50KB): </label>
+                        <input type="file" class="form-control-file" id="enviar" required>
+                        <div class="valid-feedback">
+                           Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                           O arquivo e obrigatório, insira um arquivo válido.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-6">
+                        <button type="reset" class="btn btn-secondary mt-3 fr">Limpar formulário</button>
+                     </div>
+                     <div class="col-6">
+                        <button type="submit" class="btn btn-success mt-3">Efetuar cadastro</button>
+                     </div>
+                  </div>
+               </form>
+               <script></script>
+            </div>
+            <div class="col-2"></div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+      <script src="./script.js"></script>
+   </body>
+</html>

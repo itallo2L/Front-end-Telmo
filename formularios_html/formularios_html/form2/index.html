@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="Description" content="Formulário simples para coleta de informações pessoais"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+      <title>Formulários - Banco de dados</title>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col">
+               <header class="header shadow-md p-3 mb-5 rounded">
+                  <h3>Formulários com banco de dados</h3>
+               </header>
+            </div>
+         </div>
+         <div class="row mt-3">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="col-1"></div>
+                     <div class="col-10 form shadow-md p-3 mb-5 rounded border min-height">
+                        <h5 class="mb-4">
+                        Banco de dados - Cadastro de informações</h4>
+                        <form class="needs-validation" novalidate>
+                           <div>
+                              <div class="form-group row my-2">
+                                 <label for="cod" class="col-sm-4 col-form-label label">Código do cliente: </label>
+                                 <div class="col-9">
+                                    <input type="text" minlength="5" maxlength="60" class="form-control" id="cod"
+                                       placeholder="Digite o código do cliente" required>
+                                    <div class="valid-feedback">
+                                       Tudo certo!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                       Código inválido, verifique e tente novamente.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-group row my-2">
+                                 <label for="value" class="col-sm-4 col-form-label label">Valor da compra (em R$): </label>
+                                 <div class="col-sm-9">
+                                    <input type="number" minlength="1" maxlength="60" class="form-control" id="value" required
+                                       placeholder="Digite o valor da compra">
+                                    <div class="valid-feedback">
+                                       Tudo certo!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                       Por favor, informe um valor de compra válido.
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <label class="col-sm-6 col-form-label" for="equipgroup">
+                              Tipo de equipamento adquirido
+                              </label>
+                              <div class="col-sm-9" id="equipgroup">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="equipamento" id="impressora"
+                                       value="Menor18" checked>
+                                    <label class="form-check-label" for="impressora">
+                                    Impressora
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="equipamento" id="notebook"
+                                       value="Menor18">
+                                    <label class="form-check-label" for="notebook">
+                                    Notebook
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="equipamento" id="smartphone"
+                                       value="Maior18">
+                                    <label class="form-check-label" for="smartphone">
+                                    Smartphone
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <button type="submit" class="btn btn-success mt-3">Cadastrar compra</button>
+                        </form>
+                     </div>
+                     <div class="col-1"></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="col-1"></div>
+                     <div class="col-10 form shadow-md p-3 mb-7 rounded border min-height mb-5">
+                        <h5 class="mb-4">Banco de dados - Alteração de informações</h5>
+                        <form class="needs-validation" novalidate>
+                           <div class="form-group row my-2">
+                              <label for="cod" class="col-sm-8 col-form-label label">Código do cliente para a pesquisa: </label>
+                              <div class="col-6">
+                                 <input type="text" minlength="5" maxlength="60" class="form-control" id="cod" required
+                                    placeholder="Digite o código do cliente">
+                                 <div class="valid-feedback">
+                                    Tudo certo!
+                                 </div>
+                                 <div class="invalid-feedback">
+                                    Por favor, informe um código válido.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group row my-2">
+                              <label for="value" class="col-sm-8 col-form-label label">Retificação do valor da compra (em R$): </label>
+                              <div class="col-sm-6">
+                                 <input type="number" minlength="1" maxlength="60" class="form-control" id="value" required
+                                    placeholder="Digite o valor da venda">
+                                 <div class="valid-feedback">
+                                    Tudo certo!
+                                 </div>
+                                 <div class="invalid-feedback">
+                                    Por favor, informe um valor de venda válido.
+                                 </div>
+                              </div>
+                           </div>
+                           <button type="submit" class="btn btn-success mt-3">Alterar valor da compra</button>
+                        </form>
+                     </div>
+                     <div class="col-1"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+      <script src="./script.js"></script>
+   </body>
+</html>

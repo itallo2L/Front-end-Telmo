@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+
+<body>
+  <form>
+    <section>
+      <fieldset>
+        <legend>INFORMAÇÕES PESSOAIS</legend>
+        <p><label for="nome"><span>Nome : </span></label>
+          <input type="text" name="nome" id="nome" />
+        </p>
+        <p>
+          <label for="endereco"><span>Endereço : </span></label>
+          <input type="text" name="endereco" id="endereco" />
+        </p>
+        <p><label for="cidade"><span>Cidade : </span></label>
+          <input type="text" name="cidade" id="cidade" />
+        </p>
+        <p>...mais informações pessoais...</p>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset>
+        <legend>HISTÓRICO MÉDICO</legend>
+        <ul>
+          <li><label for="variola">Varíola : <input type="checkbox" name="variola" id="variola" /></label>
+          <li><label for="caxumba">Caxumba :
+              <input type="checkbox" name="caxumba" id="caxumba" />
+            </label>
+          <li><label for="tonturas">Tonturas :
+              <input type="checkbox" name="tonturas" id="tonturas" />
+            </label>
+          <li><label for="espirros">Esirros :
+              <input type="checkbox" name="espirros" id="espirros">
+            </label>
+        </ul>
+        <p>...mais detalhes do histórico médico...</p>
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>OPÇÕES</legend>
+        <select name="opcoes" id="opcoes">
+          <option value="nenhum">Nenhum</option>
+          <option value="cardiaco">Cardíaco</option>
+          <option value="hipertenso">Hipertenso</option>
+          <option value="diabetico">Diabético</option>
+        </select>
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>MEDICAÇÃO ATUAL</legend>
+        <p>...atualmente faz uso de algum medicamento?</p>
+        <ul>
+          <li>
+            <label for="sim">Sim :
+              <input type="radio" name="sim" id="sim">
+            </label>
+          <li>
+            <label for="nao">Não :
+              <input type="radio" name="nao" id="nao">
+            </label>
+        </ul>
+        <p>...se faz uso de algum medicamento, informe-o no espaço abaixo: </p>
+      </fieldset>
+    </section>
+  </form>
+</body>
+
+</html>

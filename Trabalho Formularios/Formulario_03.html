@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Formulario_03</title>
+        
+         <link rel="stylesheet" href="Style.css">      
+    </head>
+    <body>
+       <form action="#" method="GET">
+           <fieldset>
+               <fieldset id="cabeçalho">
+                   <div><h1>Formulários - publicação de artigos</h1></div>
+               </fieldset>
+
+               <fieldset id="principal">
+                   <legend>Artigo</legend>
+                <div class="campoArtigo">
+                    <label for="titulo">Titulo:</label>
+                    <input type="text" id="titulo" name="titulo" value="">
+                </div>
+
+                <div class="campoArtigo">
+                    <label for="dataPublicacao">Data da Publicação:</label>
+                    <input type="date" id="dataPublicacao" name="dataPublicacao">
+                </div>
+
+                <div class="campoArtigo" >
+                    <label for="palavraChave">Palavras-chave do artigo:</label>
+                    <textarea type="txt" id="palavraChave" name="palavraChave"></textarea>
+                </div>
+
+                <div class="botaoAnexo">
+                   <p> <label for="EnviarArquivo">Enviar artigo (formato .pdf, máximo de 50KB):</label>
+                    <input type="submit" id="botaoA" value="Selecionar Arquivo..."/>
+                    <label for="EnviarArquivo">Nenhum Arquivo Selecionado</label>
+                    </p>
+                </div>
+               </fieldset>
+               <div class="botaoEnviar">
+                     <input type="submit" value="EnviarArtigo"/>
+                 </div>
+           </fieldset>
+       </form>
+    </body>
+ </html>

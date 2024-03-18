@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+        <meta charset="UTF-8">
+
+        <title>Formulario_02</title>
+
+        <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+        <form action="#" method="GET">
+                <fieldset>
+                        <fieldset id="cabeçalho">
+                                <div>
+                                        <h1>Formulários com banco de dados</h1>
+                                </div>
+                        </fieldset>
+                        <fieldset id="principal_2">
+                                <legend>Banco de Dados - Cadastro de Informações</legend>
+                                <div class="campoCadastro">
+                                        <label for="codCliente">Codigo do Cliente:</label>
+                                        <input type="text" id="codCliente" name="codCliente" value="">
+                                </div>
+
+                                <div class="campoCadastro">
+                                        <label for="valCompra">Valor da Compra (em R$):</label>
+                                        <input type="number" id="valCompra" name="valCompra" value="">
+                                </div>
+
+                                <div class="radioEquip">
+                                        <p><label for="tipoEquip">Tipo de Equipamento Adquirido:</label></p>
+
+                                        <input type="radio" name="tipoEquip" value="Impressora" id="tipoEquip">
+                                        <label for="Impressora">Impressora</label> <br>
+
+                                        <input type="radio" name="tipoEquip" value="Notebook" id="tipoEquip">
+                                        <label for="Notebook">Notebook</label> <br>
+
+                                        <input type="radio" name="tipoEquip" value="Smartphone" id="tipoEquip">
+                                        <label for="Smartphone">Smartphone</label> <br>
+                                </div>
+
+                                <div class="botaoCadastro">
+                                        <input type="submit" value="Cadastrar Compra" />
+                                </div>
+                        </fieldset>
+                        <fieldset id="principal_3">
+                                <legend>Banco de dados - Alteração de Informações</legend>
+
+                                <div class="campoAlteracao">
+                                        <label for="codClientePesquisa">Codigo do Cliente para Pesquisa:</label>
+                                        <input type="text" id="codClientePesquisa" name="codClientePesquisa" value="">
+                                </div>
+
+                                <div class="campoAlteracao">
+                                        <label for="RetValCompra">Retificação do Valor da Compra (em
+                                                R$):</label>
+                                        <input type="number" id="RetValCompra" name="RetValCompra" value="">
+                                        <!-- o type number cria uma caixa que incrementa-->
+                                </div>
+
+                                <div class="botaoAlteracao">
+                                        <input type="submit" value="Alterar Valor da Compra" />
+                                </div>
+                        </fieldset>
+                </fieldset>
+        </form>
+</body>
+
+</html>

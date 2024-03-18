@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Formaulario_01</title>
+        
+         <link rel="stylesheet" href="Style.css">                
+    </head>
+    <body>
+       <form action="#" method="GET">
+           <fieldset>
+               <fieldset id="cabeçalho">
+                   <div>
+                       <h1>Formulários - Coleta de Informações Pessoais</h1>
+                   </div>
+               </fieldset>
+               
+               <fieldset id="principal">
+                    <legend>Informações Pessoais</legend>
+                   <div class="campo">
+                       <label for="nome">Nome Completo:</label>
+                       <input type="text" id="nome" name="nome" placeholder="Seu Nome Aqui...">
+                   </div>
+
+                   <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email" value="">
+                   </div>
+
+                   <div class="campo">
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" id="data" name="dataNascimento">
+                    </div>
+
+                    <div class="campo">
+                            <label for="login">Login:</label>
+                            <input type="text" id="login" name="login" value="">
+                    </div>
+
+                    <div class="campo">
+                                <label for="senha">Senha:</label>
+                                <input type="password" id="senha" name="senha">
+                    </div>
+
+                    <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select id="estado" name="estado">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espirito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso Do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="Pa">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RR">Roraima</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RJ">Rio De Janeiro</option>
+                                <option value="RN">Rio Grande Do Norte</option>
+                                <option value="RS">Rio Grande Do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                     </div>
+
+                     <div class="radio">
+                           <p><label for="FaixaEtaria">Faixa Etária:</label></p> 
+                            <input type="radio" name="FaixaEtaria" value="Menor ou igual a 18 anos" id="FaixaEtaria">
+                            <label for="Menor ou igual a 18 anos">Menor ou igual a 18 anos</label> <br>
+                            
+                            <input type="radio" name="FaixaEtaria" value="Maior de 18 anos" id="FaixaEtaria">
+                            <label for="Maior de 18 anos">Maior de 18 anos</label> <br>
+                     </div>
+               </fieldset>
+
+               <div class="botao">
+                   <input id="botao_1" type="reset" value="Limpar Formulario"/>
+                   <input id="botao_2" type="submit" value="Efetue Cadastro"/>
+               </div> 
+           </fieldset>
+       </form>
+    </body>
+ </html>
